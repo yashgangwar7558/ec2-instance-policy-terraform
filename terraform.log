@@ -1,0 +1,62 @@
+2023-05-01T19:15:45.396+0530 [INFO]  Terraform version: 1.3.9
+2023-05-01T19:15:45.397+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2023-05-01T19:15:45.397+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.0
+2023-05-01T19:15:45.397+0530 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-05-01T19:15:45.397+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-05-01T19:15:45.397+0530 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-05-01T19:15:45.397+0530 [INFO]  Go runtime version: go1.19.6
+2023-05-01T19:15:45.397+0530 [INFO]  CLI args: []string{"C:\\ProgramData\\chocolatey\\lib\\terraform\\tools\\terraform.exe", "init"}
+2023-05-01T19:15:45.398+0530 [TRACE] Stdout is a terminal of width 149
+2023-05-01T19:15:45.398+0530 [TRACE] Stderr is a terminal of width 149
+2023-05-01T19:15:45.398+0530 [TRACE] Stdin is a terminal
+2023-05-01T19:15:45.402+0530 [DEBUG] Attempting to open CLI config file: C:\Users\Yash Gangwar\AppData\Roaming\terraform.rc
+2023-05-01T19:15:45.402+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-05-01T19:15:45.402+0530 [INFO]  Loading CLI configuration from C:\Users\Yash Gangwar\AppData\Roaming\terraform.d\credentials.tfrc.json
+2023-05-01T19:15:45.402+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-05-01T19:15:45.402+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\Yash Gangwar\AppData\Roaming\terraform.d\plugins
+2023-05-01T19:15:45.403+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\Yash Gangwar\AppData\Roaming\HashiCorp\Terraform\plugins
+2023-05-01T19:15:45.403+0530 [INFO]  CLI command args: []string{"init"}
+2023-05-01T19:15:45.409+0530 [TRACE] Meta.Backend: built configuration for "cloud" backend with hash value 3868216047
+2023-05-01T19:15:45.409+0530 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-05-01T19:15:45.409+0530 [DEBUG] New state was assigned lineage "e084f2e9-7ac4-00db-cd2a-c033f8136027"
+2023-05-01T19:15:45.409+0530 [TRACE] Meta.Backend: moving from default local state only to "cloud" backend
+2023-05-01T19:15:45.409+0530 [DEBUG] checking for provisioner in "."
+2023-05-01T19:15:45.409+0530 [DEBUG] checking for provisioner in "C:\\ProgramData\\chocolatey\\lib\\terraform\\tools"
+2023-05-01T19:15:45.409+0530 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2023-05-01T19:15:45.409+0530 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2023-05-01T19:15:45.409+0530 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2023-05-01T19:15:45.409+0530 [TRACE] statemgr.Filesystem: read nil snapshot
+2023-05-01T19:15:45.409+0530 [TRACE] Meta.Backend: ignoring local "default" workspace because its state is empty
+2023-05-01T19:15:45.409+0530 [TRACE] Meta.Backend: Terraform Cloud mode initialization type: ConfigChangeInPlace
+2023-05-01T19:15:45.410+0530 [DEBUG] Service discovery for app.terraform.io at https://app.terraform.io/.well-known/terraform.json
+2023-05-01T19:15:45.410+0530 [TRACE] HTTP client GET request to https://app.terraform.io/.well-known/terraform.json
+2023-05-01T19:15:48.180+0530 [DEBUG] New state was assigned lineage "4738e26b-3604-dcef-3d58-f0d0c32094bf"
+2023-05-01T19:15:48.180+0530 [TRACE] Meta.selectWorkspace: automatically selecting the single workspace provided by the backend (ec2-instance-policy-terraform)
+2023-05-01T19:15:48.181+0530 [TRACE] Preserving existing state lineage "4738e26b-3604-dcef-3d58-f0d0c32094bf"
+2023-05-01T19:15:49.322+0530 [TRACE] Meta.Backend: instantiated backend of type *cloud.Cloud
+2023-05-01T19:15:49.331+0530 [DEBUG] checking for provisioner in "."
+2023-05-01T19:15:49.331+0530 [DEBUG] checking for provisioner in "C:\\ProgramData\\chocolatey\\lib\\terraform\\tools"
+2023-05-01T19:15:49.331+0530 [TRACE] Meta.Backend: backend *cloud.Cloud supports operations
+2023-05-01T19:15:49.611+0530 [TRACE] cloud: Creating Terraform Cloud workspace AWS-terraform-7558/ec2-instance-policy-terraform
+2023-05-01T19:15:50.532+0530 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2023-05-01T19:15:50.532+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2023-05-01T19:15:50.567+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-05-01T19:15:50.567+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-05-01T19:15:50.594+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2023-05-01T19:15:50.594+0530 [TRACE] getproviders.SearchLocalDirectory: failed to resolve symlinks for .terraform\providers: CreateFile .terraform\providers: The system cannot find the file specified.
+2023-05-01T19:15:50.594+0530 [TRACE] providercache.fillMetaCache: error while scanning directory .terraform\providers: cannot search .terraform\providers: CreateFile .terraform\providers: The system cannot find the file specified.
+2023-05-01T19:15:50.595+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/4.65.0/download/windows/amd64
+2023-05-01T19:15:50.595+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/4.65.0/download/windows/amd64
+2023-05-01T19:15:50.624+0530 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_SHA256SUMS
+2023-05-01T19:15:50.624+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_SHA256SUMS
+2023-05-01T19:15:50.655+0530 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_SHA256SUMS.72D7468F.sig
+2023-05-01T19:15:50.655+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_SHA256SUMS.72D7468F.sig
+2023-05-01T19:15:50.661+0530 [TRACE] providercache.Dir.InstallPackage: installing registry.terraform.io/hashicorp/aws v4.65.0 from https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_windows_amd64.zip
+2023-05-01T19:15:50.661+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.65.0/terraform-provider-aws_4.65.0_windows_amd64.zip
+2023-05-01T19:16:44.680+0530 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2023-05-01T19:16:46.590+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2023-05-01T19:16:46.591+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v4.65.0 for windows_amd64 at .terraform\providers\registry.terraform.io\hashicorp\aws\4.65.0\windows_amd64
+2023-05-01T19:16:46.591+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\aws\4.65.0\windows_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 4.65.0
