@@ -4,7 +4,7 @@ terraform {
     organization = "AWS-terraform-7558"
 
     workspaces {
-      name = "ec2-instance-terraform-policy"
+      name = "ec2-instance-policy-terraform"
     }
   }
 }
